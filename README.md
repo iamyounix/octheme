@@ -57,4 +57,6 @@ Just a simple OpenCore Theme
     - Path = `PciRoot(0x0)/Pci(0x17,0x0)/Sata(0x0,0xFFFF,0x0)/HD(2,GPT,XFX5XEX0-XCX1-XAXA-X3X3-X4X3X3XCXAXF,0xX4X2X,0xX4X8X9X)/\System\Library\CoreServices\boot.efi` (Use OpenShell.efi to dump GUID path)
     - TextMode = `No`/`False`
 
+## Credits
 
+⌘ [Acidanthera](https://github.com/acidanthera/) ⌘ [corpnewt](https://github.com/corpnewt) ⌘ [Dortania](https://github.com/dortania) ⌘ [khronokernel](https://github.com/khronokernel) ⌘ [5T33Z0](https://github.com/5T33Z0) ⌘ [Photopea](https://www.photopea.com/)
