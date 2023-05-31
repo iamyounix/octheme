@@ -1,4 +1,4 @@
-# Younix OC Theme
+# OC Theme
 Just a simple OpenCore Theme
 
 ## OpenCanopy Theme
