@@ -3,7 +3,7 @@ Just a simple OpenCore Theme
 
 ## OpenCanopy Theme
 
-### [**oc theme silver**](https://github.com/iamyounix/younix_octheme/releases/download/oc_theme/oc_theme_rad.zip)
+### [**oc theme silver**](https://github.com/iamyounix/younix_octheme/releases/download/oc_theme/oc_theme_silver.zip)
 
 ![silver](https://github.com/iamyounix/younix_octheme/assets/72515939/21c87be7-5086-4ece-b1f1-e77273f26424)
 
