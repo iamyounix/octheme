@@ -1,4 +1,5 @@
 # OC Theme
+
 Just a simple OpenCore Theme
 
 ## OpenCanopy Theme
@@ -74,7 +75,6 @@ Just a simple OpenCore Theme
     - Name = `Install macOS 12` (Label)
     - Path = `PciRoot(0x0)/Pci(0x17,0x0)/Sata(0x0,0xFFFF,0x0)/HD(2,GPT,XFX5XEX0-XCX1-XAXA-X3X3-X4X3X3XCXAXF,0xX4X2X,0xX4X8X9X)/\System\Library\CoreServices\boot.efi` (Use OpenShell.efi to dump GUID path)
     - TextMode = `No`/`False`
-
 
 ### [**oc theme circle**](https://github.com/iamyounix/younix_octheme/releases/download/oc_theme/oc_theme_circle.zip)
 
