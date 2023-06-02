@@ -6,7 +6,7 @@ Just a simple OpenCore Theme
 
 ### [**oc theme silver**](https://github.com/iamyounix/younix_octheme/releases/download/oc_theme/oc_theme_silver.zip)
 
-![silver](https://github.com/iamyounix/younix_octheme/assets/72515939/21c87be7-5086-4ece-b1f1-e77273f26424)
+![silver](https://github.com/iamyounix/younix_octheme/assets/72515939/0811a66c-1c95-4473-8c1e-ee6382a5d24f)
 
 - Rad Theme Config Example:
   - PickerAttributes = `147`
