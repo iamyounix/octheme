@@ -5,12 +5,12 @@
 ![kora](https://github.com/iamyounix/younix_octheme/assets/72515939/f553cb87-ac68-4422-afc8-c7cdedd3bc0b)
 
 - **Support**
-  - Windows
   - Apple
-  - Manjaro
-  - PopOS
   - Archlinux
   - Linux
+  - Manjaro
+  - PopOS
+  - Windows
 
 - **Misc** / **Boot**
   - PickerAttributes = `145` / `147`
