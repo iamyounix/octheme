@@ -82,7 +82,7 @@ Windows is automatically detected by OpenCore, so the basic `Windows` flavour wi
 
 Icon support for Linux is optional. It is not required to provide all flavours even if some are provided; icon pack authors are encouraged to respond to real user demand.
 
-> Note: Media pack authors should understand that it is not required, but optional, to provide `Linux.icns` even if, for example, `Debian.icns` or `Ubuntu.icns` are provided. Provided icons will be used (if selected in flavours specified by the user); icons which are not present will always fall back eventually to OC defaults. (In the case of an OS this will fall back to `HardDrive.icns`.) Similar rules apply in all sections.
+> Media pack authors should understand that it is not required, but optional, to provide `Linux.icns` even if, for example, `Debian.icns` or `Ubuntu.icns` are provided. Provided icons will be used (if selected in flavours specified by the user); icons which are not present will always fall back eventually to OC defaults. (In the case of an OS this will fall back to `HardDrive.icns`.) Similar rules apply in all sections.
 
 Please open an Issue or Pull Request if an additional Linux flavour is required. (Please base this on actual need, e.g. it will affect at least several users.)
 
@@ -150,7 +150,7 @@ If providing just one file, name it `Shell.icns` if the theming of the icon is g
 - **UEFIShell:Shell** - EDK II UEFI Shell
   - As an example of how flavours work: **UEFIShell:Shell** will try `UEFIShell.icns`, then `Shell.icns` (and then, by OC default behaviour, `Tool.icns`, then `HardDrive.icns`)
 
-    >Note: Including **UEFIShell** anywhere in the flavour triggers picker audio-assist for "UEFI Shell"_
+    > Including **UEFIShell** anywhere in the flavour triggers picker audio-assist for "UEFI Shell"_
 
 - **OpenShell:UEFIShell:Shell** - Themed specifically for OpenCore OpenShell (which is a variant of the EDK II UEFI Shell)
   - This is the recommended flavour to use for `OpenShell.efi`, as is done in the sample config files
@@ -169,13 +169,13 @@ If providing `NVRAMTool.icns`, it should be themed so that it could be applied t
   - This is the recommended flavour, used for the entry created by the `ResetNvramEntry.efi` driver.
   - As another example of how flavours work: **ResetNVRAM:NVRAMTool** will look for `ResetNVRAM.icns`, then `NVRAMTool.icns` (and then, by OC default behaviour, `Tool.icns` then `HardDrive.icns`)
 
-    >Note: Including **ResetNVRAM** anywhere in a user flavour triggers picker audio-assist and builtin label support for "Reset NVRAM"
+    > Including **ResetNVRAM** anywhere in a user flavour triggers picker audio-assist and builtin label support for "Reset NVRAM"
 
 - **ToggleSIP:NVRAMTool** - Icon themed for Toggle SIP tool  (`ToggleSIP.icns`)
 - **ToggleSIP_Enabled:ToggleSIP:NVRAMTool** - Icon themed for Toggle SIP tool when SIP is enabled (system is protected)
 - **ToggleSIP_Disabled:ToggleSIP:NVRAMTool** - Icon themed for Toggle SIP tool when SIP is disabled (system is unprotected)
 
-    >Note: Including **ToggleSIP_Enabled** or **ToggleSIP_Disabled** anywhere in a user flavour triggers picker audio-assist and builtin label support for the two states of the Toggle SIP menu entry
+    > Including **ToggleSIP_Enabled** or **ToggleSIP_Disabled** anywhere in a user flavour triggers picker audio-assist and builtin label support for the two states of the Toggle SIP menu entry
 
 ### Other Tools
 
