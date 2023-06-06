@@ -1,13 +1,27 @@
 # OpenCore Content Flavours
 
-See [Configuration.pdf](Configuration.pdf) for a technical description of the OpenCore content flavour system.
-
-This document provides a list of recommended flavours, so that icon pack artists understand what they must and can do, and so that different icon packs can use consistent names for optional icons.
+See [Configuration.pdf](Configuration.pdf) for a technical description of the OpenCore content flavour system. This document provides a list of recommended flavours, so that icon pack artists understand what they must and can do, and so that different icon packs can use consistent names for optional icons. Please raise a Pull Request or create an Issue to request additional flavours added to the lists below.
 
 ***Please follow this guide when providing non-default icons in icon packs.***
 
-Please raise a Pull Request or create an Issue to request additional flavours added to the lists below.
+Table of Contents
 
+- [Recommended Icon Flavours](#recommended-icon-flavours)
+- [macOS](#macos)
+- [Windows](#windows)
+- [Linux](#linux)
+- [Other Operating Systems](#other-operating-systems)
+- [Tools](#tools)
+  - [Generic Tool Icon](#generic-tool-icon)
+  - [Shell Tools](#shell-tools)
+  - [NVRAM Tools](#nvram-tools)
+  - [Other Tools](#other-tools)
+- [Bootloaders](#bootloaders)
+- [System Boot Entry Icons](#system-boot-entry-icons)
+  - [Required](#required)
+  - [Optional](#optional)
+  - [Additional Optional](#additional-optional)
+- [System Icons](#system-icons)
 
 ## Recommended Icon Flavours
 
@@ -23,35 +37,33 @@ In the case of macOS only, a flavour based on the detected OS version is applied
 
 For icon pack authors, the **Apple** icon is recommended, **AppleRecovery** and **AppleTM** are suggested, all others are entirely optional.
 
- - **Apple12:Apple** - Monterey (`Apple12.icns`)
- - **Apple11:Apple** - Big Sur (`Apple11.icns`)
- - **Apple10_15:Apple** - Catalina (`Apple10_15.icns`, etc.)
- - **Apple10_14:Apple** - Mojave
- - **Apple10_13:Apple** - High Sierra
- - **Apple10_12:Apple** - Sierra
- - **Apple10_11:Apple** - El Capitan
- - **Apple10_10:Apple** - Yosemite
- - **Apple10_9:Apple** - Mavericks
- - **Apple10_8:Apple** - Mountain Lion
- - **Apple10_7:Apple** - Lion
- - **Apple10_6:Apple** - Snow Leopard
- - **Apple10_5:Apple** - Leopard
- - **Apple10_4:Apple** - Tiger
+- **Apple12:Apple** - Monterey (`Apple12.icns`)
+- **Apple11:Apple** - Big Sur (`Apple11.icns`)
+- **Apple10_15:Apple** - Catalina (`Apple10_15.icns`, etc.)
+- **Apple10_14:Apple** - Mojave
+- **Apple10_13:Apple** - High Sierra
+- **Apple10_12:Apple** - Sierra
+- **Apple10_11:Apple** - El Capitan
+- **Apple10_10:Apple** - Yosemite
+- **Apple10_9:Apple** - Mavericks
+- **Apple10_8:Apple** - Mountain Lion
+- **Apple10_7:Apple** - Lion
+- **Apple10_6:Apple** - Snow Leopard
+- **Apple10_5:Apple** - Leopard
+- **Apple10_4:Apple** - Tiger
 
 In addition, per-OS Recovery variants and Time Machine variants may be supported by adding `Recv` and `TM` to each element of the flavour as shown below.
 
 Recovery flavours also automatically add the OS version:
 
- - **AppleRecv11:AppleRecv:Apple11:Apple** - macOS Big Sur Recovery (`AppleRecv11.icns`, etc.)
- - ...
- - **AppleRecv10_4:AppleRecv:Apple10_4:Apple** - macOS Tiger Recovery
+- **AppleRecv11:AppleRecv:Apple11:Apple** - macOS Big Sur Recovery (`AppleRecv11.icns`, etc.)
+- **AppleRecv10_4:AppleRecv:Apple10_4:Apple** - macOS Tiger Recovery
 
- Time machine icons _do not_ automatically add the OS version, so per-OS versions would require manual specification by the user (e.g. in `.contentFlavour`) as follows, in order to be found and used:
+ Time machine icons *do not* automatically add the OS version, so per-OS versions would require manual specification by the user (e.g. in `.contentFlavour`) as follows, in order to be found and used:
 
- - **AppleTM:Apple** - macOS Time Machine, default flavour, not version specific
- - **AppleTM11:AppleTM:Apple11:Apple** - macOS Big Sur Time Machine (`AppleTM11.icns`, etc.)
- - ...
- - **AppleTM10_4:AppleTm:Apple10_4:Apple** - macOS Tiger Time Machine
+- **AppleTM:Apple** - macOS Time Machine, default flavour, not version specific
+- **AppleTM11:AppleTM:Apple11:Apple** - macOS Big Sur Time Machine (`AppleTM11.icns`, etc.)
+- **AppleTM10_4:AppleTm:Apple10_4:Apple** - macOS Tiger Time Machine
 
 ## Windows
 
@@ -59,13 +71,12 @@ Windows is automatically detected by OpenCore, so the basic `Windows` flavour wi
 
 **Windows** icon is recommended, all others are optional.
 
- - **Windows** - Microsoft Windows (auto-detected by OC; fallback: **HardDrive**)
- - **Windows11:Windows** - Microsoft Windows 11 (`Windows11.icns`)
- - **Windows10:Windows** - Microsoft Windows 10 (`Windows10.icns`)
- - **Windows8_1:Windows** - Microsoft Windows 8.1 (`Windows8_1.icns`, etc.)
- - **Windows8:Windows** - Microsoft Windows 8
- - **Windows7:Windows** - Microsoft Windows 7
-
+- **Windows** - Microsoft Windows (auto-detected by OC; fallback: **HardDrive**)
+- **Windows11:Windows** - Microsoft Windows 11 (`Windows11.icns`)
+- **Windows10:Windows** - Microsoft Windows 10 (`Windows10.icns`)
+- **Windows8_1:Windows** - Microsoft Windows 8.1 (`Windows8_1.icns`, etc.)
+- **Windows8:Windows** - Microsoft Windows 8
+- **Windows7:Windows** - Microsoft Windows 7
 
 ## Linux
 
@@ -75,34 +86,34 @@ Icon support for Linux is optional. It is not required to provide all flavours e
 
 Please open an Issue or Pull Request if an additional Linux flavour is required. (Please base this on actual need, e.g. it will affect at least several users.)
 
- - **Linux** - Base icon for Linux (`Linux.icns`)
- - **Arch:Linux** - Arch Linux (`Arch.icns`, etc.)
- - **Astra:Linux** - Astra Linux
- - **CentOS:Linux** - CentOS
- - **Debian:Linux** - Debian
- - **Deepin:Linux** - Deepin
- - **elementaryOS:Linux** - elementary OS
- - **Endless:Linux** - Endless OS
- - **Gentoo:Linux** - Gentoo Linux
- - **Fedora:Linux** - Fedora
- - **KDEneon:Linux** - KDE neon
- - **Kali:Linux** - Kali Linux
- - **MX:Linux** - MX Linux
- - **Mageia:Linux** - Mageia (fork of former Mandriva)
- - **Manjaro:Linux** - Manjaro
- - **Mint:Linux** - Linux Mint
- - **openSUSE:Linux** - openSUSE
- - **Oracle:Linux** - Oracle Linux
- - **PopOS:Linux** - Pop!_OS
- - **RHEL:Linux** - Red Hat Enterprise Linux
- - **Rocky:Linux** - Rocky Linux
- - **Solus:Linux** - Solus
- - **Ubuntu:Linux** - Ubuntu
- - **Lubuntu:Ubuntu:Linux** - Lubuntu (`Lubuntu.icns`, etc.)
- - **UbuntuMATE:Ubuntu:Linux** - Ubuntu MATE
- - **Void:Linux** - Void Linux
- - **Xubuntu:Ubuntu:Linux** - Xubuntu
- - **Zorin:Linux** - Zorin OS
+- **Linux** - Base icon for Linux (`Linux.icns`)
+- **Arch:Linux** - Arch Linux (`Arch.icns`, etc.)
+- **Astra:Linux** - Astra Linux
+- **CentOS:Linux** - CentOS
+- **Debian:Linux** - Debian
+- **Deepin:Linux** - Deepin
+- **elementaryOS:Linux** - elementary OS
+- **Endless:Linux** - Endless OS
+- **Gentoo:Linux** - Gentoo Linux
+- **Fedora:Linux** - Fedora
+- **KDEneon:Linux** - KDE neon
+- **Kali:Linux** - Kali Linux
+- **MX:Linux** - MX Linux
+- **Mageia:Linux** - Mageia (fork of former Mandriva)
+- **Manjaro:Linux** - Manjaro
+- **Mint:Linux** - Linux Mint
+- **openSUSE:Linux** - openSUSE
+- **Oracle:Linux** - Oracle Linux
+- **PopOS:Linux** - Pop!_OS
+- **RHEL:Linux** - Red Hat Enterprise Linux
+- **Rocky:Linux** - Rocky Linux
+- **Solus:Linux** - Solus
+- **Ubuntu:Linux** - Ubuntu
+- **Lubuntu:Ubuntu:Linux** - Lubuntu (`Lubuntu.icns`, etc.)
+- **UbuntuMATE:Ubuntu:Linux** - Ubuntu MATE
+- **Void:Linux** - Void Linux
+- **Xubuntu:Ubuntu:Linux** - Xubuntu
+- **Zorin:Linux** - Zorin OS
 
 ## Other Operating Systems
 
@@ -110,13 +121,13 @@ All optional.
 
 Additional sub-flavours are obviously possible for Android, but none are currently defined in this list. Create a Pull Request or Issue if you believe there is a genuine need - e.g. affecting at least several users - to include these.
 
- - **Android** - Android OS
-   - It is down to user preference whether to specify the flavour as **Android:Linux** or just **Android** - depending on whether the user wishes to use `Linux.icns` as a fallback where available, or to fallback directly to **HardDrive** if no `Android.icns` is available
- - **BSD** - Base icon for BSD
- - **FreeBSD:BSD** - FreeBSD
-   - Typically at most one of the above two icon files will be provided
- - **ReactOS** - ReactOS (alpha version open-source Windows Server binary compatible OS; not currently UEFI bootable, but reserved here anyway) (`ReactOS.icns`)
-   - It is user preference whether to specify **ReactOS:Windows** or just **ReactOS** - depending on whether the user wishes to use `Windows.icns` as a fallback, or to fallback directly to `HardDrive.icns` if no `ReactOS.icns` is available.
+- **Android** - Android OS
+  - It is down to user preference whether to specify the flavour as **Android:Linux** or just **Android** - depending on whether the user wishes to use `Linux.icns` as a fallback where available, or to fallback directly to **HardDrive** if no `Android.icns` is available
+- **BSD** - Base icon for BSD
+- **FreeBSD:BSD** - FreeBSD
+  - Typically at most one of the above two icon files will be provided
+- **ReactOS** - ReactOS (alpha version open-source Windows Server binary compatible OS; not currently UEFI bootable, but reserved here anyway) (`ReactOS.icns`)
+  - It is user preference whether to specify **ReactOS:Windows** or just **ReactOS** - depending on whether the user wishes to use `Windows.icns` as a fallback, or to fallback directly to `HardDrive.icns` if no `ReactOS.icns` is available.
 
 ## Tools
 
@@ -126,24 +137,26 @@ Create an Issue or Pull Request to request additional tool icons. If doing so pl
 
 It is recommended to provide this icon.
 
- - **Tool** - Any tool entry
-   - If provided, is used as fallback for non-OS entries in OpenCore; if not provided falls back again to **HardDrive** (which is required)
+- **Tool** - Any tool entry
+  - If provided, is used as fallback for non-OS entries in OpenCore; if not provided falls back again to **HardDrive** (which is required)
 
 ### Shell Tools
 
-It is recommended to provide _one_ of these files (more is optional, and not normally required).
+It is recommended to provide *one* of these files (more is optional, and not normally required).
 
 If providing just one file, name it `Shell.icns` if the theming of the icon is generic to any shell tool (as in the examples in OcBinaryData). Name it `OpenShell.icns` or `UEFIShell.icns` if the theming is more specific (e.g. includes specific text on the icon).
 
- - **Shell** - Any shell-style tool
- - **UEFIShell:Shell** - EDK II UEFI Shell
-   - As an example of how flavours work: **UEFIShell:Shell** will try `UEFIShell.icns`, then `Shell.icns` (and then, by OC default behaviour, `Tool.icns`, then `HardDrive.icns`)
-   - _**Note**: Including **UEFIShell** anywhere in the flavour triggers picker audio-assist for "UEFI Shell"_
- - **OpenShell:UEFIShell:Shell** - Themed specifically for OpenCore OpenShell (which is a variant of the EDK II UEFI Shell)
-   - This is the recommended flavour to use for `OpenShell.efi`, as is done in the sample config files
-   - Although this is the recommended *flavour*, icon artists are not required to provide this icon file, since this flavour will automatically find and use `Shell.icns` or `UEFIShell.icns` anyway
-   - Because **UEFIShell** is included in this flavour, it will also trigger picker audio-assist for "UEFI Shell"
- - **GRUBShell:Shell** - GRUB Shell themed icon
+- **Shell** - Any shell-style tool
+- **UEFIShell:Shell** - EDK II UEFI Shell
+  - As an example of how flavours work: **UEFIShell:Shell** will try `UEFIShell.icns`, then `Shell.icns` (and then, by OC default behaviour, `Tool.icns`, then `HardDrive.icns`)
+
+    >Note: Including **UEFIShell** anywhere in the flavour triggers picker audio-assist for "UEFI Shell"_
+
+- **OpenShell:UEFIShell:Shell** - Themed specifically for OpenCore OpenShell (which is a variant of the EDK II UEFI Shell)
+  - This is the recommended flavour to use for `OpenShell.efi`, as is done in the sample config files
+  - Although this is the recommended *flavour*, icon artists are not required to provide this icon file, since this flavour will automatically find and use `Shell.icns` or `UEFIShell.icns` anyway
+  - Because **UEFIShell** is included in this flavour, it will also trigger picker audio-assist for "UEFI Shell"
+- **GRUBShell:Shell** - GRUB Shell themed icon
 
 ### NVRAM Tools
 
@@ -151,29 +164,32 @@ It is recommended to either i) only provide `NVRAMTool.icns`, as this will be ap
 
 If providing `NVRAMTool.icns`, it should be themed so that it could be applied to any generic NVRAM tool.
 
- - **NVRAMTool** - Any NVRAM-related tool (`NVRAMTool.icns`)
- - **ResetNVRAM:NVRAMTool** - Reset NVRAM tool  (`ResetNVRAM.icns`)
-   - This is the recommended flavour, used for the entry created by the `ResetNvramEntry.efi` driver.
-   - As another example of how flavours work: **ResetNVRAM:NVRAMTool** will look for `ResetNVRAM.icns`, then `NVRAMTool.icns` (and then, by OC default behaviour, `Tool.icns` then `HardDrive.icns`)
-   - **Note**: Including **ResetNVRAM** anywhere in a user flavour triggers picker audio-assist and builtin label support for "Reset NVRAM"
- - **ToggleSIP:NVRAMTool** - Icon themed for Toggle SIP tool  (`ToggleSIP.icns`)
- - **ToggleSIP_Enabled:ToggleSIP:NVRAMTool** - Icon themed for Toggle SIP tool when SIP is enabled (system is protected)
- - **ToggleSIP_Disabled:ToggleSIP:NVRAMTool** - Icon themed for Toggle SIP tool when SIP is disabled (system is unprotected)
-   - **Note**: Including **ToggleSIP_Enabled** or **ToggleSIP_Disabled** anywhere in a user flavour triggers picker audio-assist and builtin label support for the two states of the Toggle SIP menu entry
+- **NVRAMTool** - Any NVRAM-related tool (`NVRAMTool.icns`)
+- **ResetNVRAM:NVRAMTool** - Reset NVRAM tool  (`ResetNVRAM.icns`)
+  - This is the recommended flavour, used for the entry created by the `ResetNvramEntry.efi` driver.
+  - As another example of how flavours work: **ResetNVRAM:NVRAMTool** will look for `ResetNVRAM.icns`, then `NVRAMTool.icns` (and then, by OC default behaviour, `Tool.icns` then `HardDrive.icns`)
+
+    >Note: Including **ResetNVRAM** anywhere in a user flavour triggers picker audio-assist and builtin label support for "Reset NVRAM"
+
+- **ToggleSIP:NVRAMTool** - Icon themed for Toggle SIP tool  (`ToggleSIP.icns`)
+- **ToggleSIP_Enabled:ToggleSIP:NVRAMTool** - Icon themed for Toggle SIP tool when SIP is enabled (system is protected)
+- **ToggleSIP_Disabled:ToggleSIP:NVRAMTool** - Icon themed for Toggle SIP tool when SIP is disabled (system is unprotected)
+
+    >Note: Including **ToggleSIP_Enabled** or **ToggleSIP_Disabled** anywhere in a user flavour triggers picker audio-assist and builtin label support for the two states of the Toggle SIP menu entry
 
 ### Other Tools
 
 A list of other known tools which are common enough that some icon pack artists may wish to provide a standard icon for them:
 
- - **MemTest** - A system memory testing tool such as that available from [memtest86.com](https://www.memtest86.com/) (`MemTest.icns`)
+- **MemTest** - A system memory testing tool such as that available from [memtest86.com](https://www.memtest86.com/) (`MemTest.icns`)
 
 ## Bootloaders
 
 Certain well-known bootloaders have also been assigned a flavour:
 
- - **Boatloader** - Generic bootloader icon (`Bootloader.icns`)
- - **Grub:Bootloader** - Icon for the GRUB2 bootloader (`Grub.icns`)
- - **OpenCore:Bootloader** - OpenCore intentionally does not offer to start instances of itself which have had the OC binary signature applied (i.e. standard release versions), however a) it will show non-signed versions and b) we need to have our own flavour (`OpenCore.icns`)
+- **Boatloader** - Generic bootloader icon (`Bootloader.icns`)
+- **Grub:Bootloader** - Icon for the GRUB2 bootloader (`Grub.icns`)
+- **OpenCore:Bootloader** - OpenCore intentionally does not offer to start instances of itself which have had the OC binary signature applied (i.e. standard release versions), however a) it will show non-signed versions and b) we need to have our own flavour (`OpenCore.icns`)
 
 ---
 
@@ -183,29 +199,29 @@ Certain well-known bootloaders have also been assigned a flavour:
 
 OpenCanopy will not start if these are not present.
 
- - **ExtHardDrive** - Bootable OS (on external drive)
- - **HardDrive** - Bootable OS
+- **ExtHardDrive** - Bootable OS (on external drive)
+- **HardDrive** - Bootable OS
 
 ### Optional
 
 Provided by OcBinaryData. Used automatically by OC in some circumstances, if provided in an icon pack.
 
- - **AppleRecv** - Apple Recovery (fallback: **HardDrive**)
- - **AppleTM** - Apple Time Machine (fallback: **HardDrive**)
- - **ExtAppleRecv** - Apple Recovery (on external drive) (fallback: **ExtHardDrive**)
- - **ExtAppleTM** - Apple Time Machine (on external drive) (fallback: **ExtHardDrive**)
- - **Shell** - Shell tool (fallback: **Tool**)
- - **Tool** - Generic tool (fallback: **HardDrive**)
- - **Windows** - Microsoft Windows (fallback: **HardDrive**)
+- **AppleRecv** - Apple Recovery (fallback: **HardDrive**)
+- **AppleTM** - Apple Time Machine (fallback: **HardDrive**)
+- **ExtAppleRecv** - Apple Recovery (on external drive) (fallback: **ExtHardDrive**)
+- **ExtAppleTM** - Apple Time Machine (on external drive) (fallback: **ExtHardDrive**)
+- **Shell** - Shell tool (fallback: **Tool**)
+- **Tool** - Generic tool (fallback: **HardDrive**)
+- **Windows** - Microsoft Windows (fallback: **HardDrive**)
 
 ### Additional Optional
 
 NOT provided by OcBinaryData. Are used automatically by OC in some circumstances, if provided.
 
- - **Apple** - macOS (fallback: **HardDrive**)
- - **ExtApple** - macOS (on external drive) (fallback: **ExtHardDrive**)
- - **ExtWindows** - Microsoft Windows (on external drive) (fallback: **ExtHardDrive**)
- - **ResetNVRAM** - Reset NVRAM tool (fallback: **Tool**)
+- **Apple** - macOS (fallback: **HardDrive**)
+- **ExtApple** - macOS (on external drive) (fallback: **ExtHardDrive**)
+- **ExtWindows** - Microsoft Windows (on external drive) (fallback: **ExtHardDrive**)
+- **ResetNVRAM** - Reset NVRAM tool (fallback: **Tool**)
 
 ---
 
@@ -215,18 +231,18 @@ Required. OpenCanopy will not start if these are not present.
 
 These icons are not directly related to boot entry flavours, but they are included here to provide all relevant icon pack info in one place.
 
- - **BtnFocus** - show focus on additional (shutdown and restart) buttons (`BtnFocus.icns`)
- - **Cursor** - mouse cursor (`Cursor.icns`, etc.)
- - **Dot** - password entry hidden character dot
- - **Enter** - password entry enter symbol
- - **Left** - additional picker entries to left
- - **Lock** - password lock
- - **Password** - password entry text area
- - **Restart** - additional button: restart
- - **Right** - additional picker entries to right
- - **Selected** - selected entry background
- - **Selector** - show selected entry
- - **SetDefault** - show selected entry in 'set default' mode
- - **ShutDown** - additional button: shut down
+- **BtnFocus** - show focus on additional (shutdown and restart) buttons (`BtnFocus.icns`)
+- **Cursor** - mouse cursor (`Cursor.icns`, etc.)
+- **Dot** - password entry hidden character dot
+- **Enter** - password entry enter symbol
+- **Left** - additional picker entries to left
+- **Lock** - password lock
+- **Password** - password entry text area
+- **Restart** - additional button: restart
+- **Right** - additional picker entries to right
+- **Selected** - selected entry background
+- **Selector** - show selected entry
+- **SetDefault** - show selected entry in 'set default' mode
+- **ShutDown** - additional button: shut down
 
 In addition, **Background** (`Background.icns`) is used as the background image for the OpenCanopy boot picker if provided.
