@@ -1,17 +1,21 @@
 # OC Theme
 
-Just a simple OpenCore Theme
-
-## OpenCanopy Theme
-
-### [**oc theme kora**](https://github.com/iamyounix/younix_octheme/releases/download/oc_theme/oc_theme_kora.zip)
+[Kora](https://github.com/bikass/kora) OC theme is taken from github user, [bikass](https://github.com/bikass) project.
 
 ![kora](https://github.com/iamyounix/younix_octheme/assets/72515939/f553cb87-ac68-4422-afc8-c7cdedd3bc0b)
 
-- Rad Theme Config Example:
-  - PickerAttributes = `147`
+- **Support**
+  - Windows
+  - Apple
+  - Manjaro
+  - PopOS
+  - Archlinux
+  - Linux
+
+- **Misc** / **Boot**
+  - PickerAttributes = `145` / `147`
   - PickerMode = `External`
-  - PickerVariant = `younix\silver`
+  - PickerVariant = `younix\kora`
   - ShowPicker = `Yes`
   - Entries
     - Arguments = `Auxiliary` (Only appear when pressing Tab)
@@ -19,7 +23,7 @@ Just a simple OpenCore Theme
     - Enabled = `Yes`/`True`
     - Flavour = `XXX:XXX` (Provided Icon Name)
     - Name = `Install macOS 12` (Label)
-    - Path = `PciRoot(0x0)/Pci(0x17,0x0)/Sata(0x0,0xFFFF,0x0)/HD(2,GPT,XFX5XEX0-XCX1-XAXA-X3X3-X4X3X3XCXAXF,0xX4X2X,0xX4X8X9X)/\System\Library\CoreServices\boot.efi` (Use OpenShell.efi to dump GUID path)
+    - Path = `PciRoot(0x0)/Pci(0x17,0x0)/Sata(0x0,0xFFFF,0x0)/HD(2,GPT,XFX5XEX0-XCX1-XAXA-X3X3-X4X3X3XCXAXF,0xX4X2X,0xX4X8X9X)/\System\Library\CoreServices\boot.efi`
     - TextMode = `No`/`False`
 
 ## Credits
