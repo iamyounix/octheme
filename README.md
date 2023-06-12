@@ -3,7 +3,6 @@
 [Kora](https://github.com/bikass/kora) OC theme is taken from github project by [bikass](https://github.com/bikass). Please read [this](https://github.com/iamyounix/younix_octheme/blob/main/Flavours.md) documentation before use.
 
 ![kora](https://github.com/iamyounix/younix_octheme/assets/72515939/f553cb87-ac68-4422-afc8-c7cdedd3bc0b)
-![icon_set](https://github.com/iamyounix/younix_octheme/assets/72515939/6722226a-dadf-4c5c-ac8e-f6614e2caa3b)
 
 - **Support**
   - Apple
