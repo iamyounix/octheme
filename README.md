@@ -1,4 +1,4 @@
-# OC Theme
+# octheme
 
 [Kora](https://github.com/bikass/kora) OC theme is taken from github project by [bikass](https://github.com/bikass). Please read [this](https://github.com/iamyounix/younix_octheme/blob/main/Flavours.md) documentation before use.
 
